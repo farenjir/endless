@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getSingleCourse } from "../../actions/course";
+import { getSingleCourse } from "../../store/actions/course";
 import Helmet from "react-helmet";
 import { courseIdValidator } from "../../utils/idValidator";
 import { Redirect } from "react-router";

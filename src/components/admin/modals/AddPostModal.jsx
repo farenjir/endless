@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { useDispatch } from "react-redux";
 import { DialogOverlay, DialogContent } from "@reach/dialog";
-import { createNewPost } from "../../../actions/posts";
+import { createNewPost } from "../../../store/actions/post";
 import { adminContext } from "../../../context/adminContext";
 
 const AddPostModal = ({ showModal, closeModal }) => {

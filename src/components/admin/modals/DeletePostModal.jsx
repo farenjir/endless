@@ -1,7 +1,7 @@
 import React from "react";
 import { DialogOverlay, DialogContent } from "@reach/dialog";
 import { useDispatch } from "react-redux";
-import { handlePostDelete } from "../../../actions/posts";
+import { handlePostDelete } from "../../../store/actions/post";
 
 const DeleteCourseModal = ({ showModal, closeModal, post }) => {
   const dispatch = useDispatch();

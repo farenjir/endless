@@ -18,6 +18,7 @@ const WeblogEdit = () => {
     filteredBlogList,
     setBlogListSearch,
   } = context;
+  const reverseList = blogListIndex.reverse()
   return (
     <div class="row">
       <div class="col text-right">
@@ -61,7 +62,7 @@ const WeblogEdit = () => {
                 </tr>
               </thead>
               <tbody>
-                {blogListIndex.map(post => (
+                {reverseList.map(post => (
                   <tr key={post._id}>
                     <td align="center">
                       <button

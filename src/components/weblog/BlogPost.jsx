@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 // import config from "../../services/config.json"
 import { useDispatch, useSelector } from "react-redux";
 import { Link, Redirect } from "react-router-dom";
-import { getSinglePost } from "../../actions/post";
+import { getSinglePost } from "../../store/actions/post";
 import Helmet from "react-helmet";
 import { singlePostIdValidator } from "../../utils/idValidator";
 

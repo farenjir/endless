@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { useDispatch } from "react-redux";
 import { DialogOverlay, DialogContent } from "@reach/dialog";
-import { createNewCourse } from "../../../actions/courses";
+import { createNewCourse } from "../../../store/actions/course";
 import { adminContext } from "../../../context/adminContext";
 
 const AddCourseModal = ({ showModal, closeModal }) => {
@@ -15,7 +15,7 @@ const AddCourseModal = ({ showModal, closeModal }) => {
   const { validator } = context;
   // handels
   const dispatch = useDispatch();
-  const handleSubmit = event => {
+  const handleSubmit = (event) => {
     event.preventDefault();
     try {
       if (validator.current.allValid()) {
@@ -58,7 +58,7 @@ const AddCourseModal = ({ showModal, closeModal }) => {
               placeholder="عنوان دوره"
               aria-describedby="title"
               value={title}
-              onChange={e => {
+              onChange={(e) => {
                 setTitle(e.target.value);
                 validator.current.showMessageFor("title");
               }}
@@ -74,7 +74,7 @@ const AddCourseModal = ({ showModal, closeModal }) => {
               placeholder="قیمت دوره به تومان"
               aria-describedby="price"
               value={price}
-              onChange={e => {
+              onChange={(e) => {
                 setPrice(e.target.value);
                 validator.current.showMessageFor("price");
               }}
@@ -92,7 +92,7 @@ const AddCourseModal = ({ showModal, closeModal }) => {
               className="form-control mt-2"
               style={{ marginBottom: 3 }}
               value={info}
-              onChange={e => {
+              onChange={(e) => {
                 setInfo(e.target.value);
                 validator.current.showMessageFor("info");
               }}

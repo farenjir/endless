@@ -10,50 +10,45 @@ import BlogContext from "../context/providers/BlogContext";
 import TaskContext from "../context/providers/TaskContext";
 import CoursesContext from "../context/providers/CoursesContext";
 // jwt
-import { addUser, clearUser } from "../actions/user";
+import { addUser, clearUser } from "../store/actions/user";
 import { isEmpty } from "lodash";
 // utils
 import { decodeToken } from "../utils/decodeToken";
 //Layouts
 import DashboardLayout from "../components/layouts/DashboardLayout";
-import Dashboard from "../components/home/Dashboard";
+import Dashboard from "../components/pages/home/Dashboard";
 import MainLayout from "../components/layouts/MainLayout";
-import MainContent from "../components/home/MainContent";
+import MainContent from "../components/pages/home/MainContent";
+// common pages
+import Logout from "../components/pages/login/Logout";
+import NotFound404 from "../components/common/NotFound404";
+// use lazy for  other pages
+import Login from "../components/pages/login/Login";
+import Profile from "../components/pages/profile/Profile";
+import Register from "../components/pages/register/Register";
+import BlogList from "../components/weblog/BlogList";
+import About from "../components/pages/about/About";
+import ContactUs from "../components/pages/contact/ContactUs";
+import Laws from "../components/pages/laws/Laws";
+import BlogPost from "../components/weblog/BlogPost";
+import ForgetPass from "../components/pages/login/ForgetPass";
+import Courses from "../components/course/Courses";
+import Course from "../components/course/Course";
+import DashBlog from "../components/weblog/dashboard/DasBlog";
+import MainBuyVip from "../components/pages/vip/MainBuyVip";
+import UserCart from "../components/pages/cart/UserCart";
 // adminDash
 import WeblogEdit from "../components/admin/WeblogEdit";
 import CoursesEdit from "../components/admin/CoursesEdit";
 import UserManage from "../components/admin/UserManage";
 // user dashboard
-import BuyVip from "../components/vip/BuyVip";
+import BuyVip from "../components/pages/vip/BuyVip";
 import DashCourses from "../components/course/dashboard/DashCourses";
-import DashTask from "../components/task/DashTask";
-// other pages
-import Logout from "../components/login/Logout";
-import Login from "../components/login/Login";
-import Profile from "../components/profile/Profile";
-import Register from "../components/register/Register";
-import BlogList from "../components/weblog/BlogList";
-import About from "../components/about/About";
-import ContactUs from "../components/contact/ContactUs";
-import Laws from "../components/laws/Laws";
-import BlogPost from "../components/weblog/BlogPost";
-import ForgetPass from "../components/login/ForgetPass";
-import Courses from "../components/course/Courses";
-import Course from "../components/course/Course";
-import NotFound404 from "../components/common/NotFound404";
-import DashBlog from "../components/weblog/dashboard/DasBlog";
-import MainBuyVip from "../components/vip/MainBuyVip";
-// get users for dashAdmin
-import { getAllUsers } from "../actions/users";
-import { store } from "../store/index";
+import DashTask from "../components/pages/task/DashTask";
 
 const Endless = () => {
-  const user = useSelector(state => state.user);
+  const user = useSelector((state) => state.user);
   const dispatch = useDispatch();
-  // initialize users for AdminDashboard
-  if (!isEmpty(user) && user.isAdmin) {
-    store.dispatch(getAllUsers());
-  }
   // check token
   useEffect(() => {
     const checkToken = () => {
@@ -69,8 +64,12 @@ const Endless = () => {
         }
       }
     };
+    // RUN
     checkToken();
+    // initialize users for AdminDashboard
+    // if (!isEmpty(user) && user.isAdmin) store.dispatch(getAllUsers());
   }, []);
+
   return (
     <Switch>
       <Route path={["/dashboard"]}>
@@ -172,6 +171,7 @@ const Endless = () => {
             <Route path="/contact-us" component={ContactUs} />
             <Route path="/weblog" component={BlogList} />
             <Route path="/courses" component={Courses} />
+            <Route path="/cart" component={UserCart} />
             <Route path="/profile" component={Profile} />
             <Route
               path="/register"

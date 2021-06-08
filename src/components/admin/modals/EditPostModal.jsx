@@ -1,7 +1,7 @@
 import React, { useState,useEffect  } from "react";
 import { useDispatch } from "react-redux";
 import { DialogOverlay, DialogContent } from "@reach/dialog";
-import { handlePostUpdate } from "../../../actions/posts";
+import { handlePostUpdate } from "../../../store/actions/post";
 
 const EditPostModal = ({ showModal, closeModal, post }) => {
   // getState

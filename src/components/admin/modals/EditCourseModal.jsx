@@ -1,7 +1,7 @@
 import React, { useState,useEffect  } from "react";
 import { useDispatch } from "react-redux";
 import { DialogOverlay, DialogContent } from "@reach/dialog";
-import { handleCourseUpdate } from "../../../actions/courses";
+import { handleCourseUpdate } from "../../../store/actions/course";
 
 const EditCourseModal = ({ showModal, closeModal, course }) => {
   // getState

@@ -4,7 +4,7 @@ import { withRouter } from "react-router";
 // contexApi
 import { userContext } from "../userContext";
 // actions and Services
-import { addUser } from "../../actions/user";
+import { addUser } from "../../store/actions/user";
 import { loginUser, registerUser } from "../../services/userServices";
 // utils
 import SimpleReactValidator from "simple-react-validator";
@@ -67,7 +67,7 @@ const UserContext = props => {
         forceUpdate(1);
       }
     } catch (ex) {
-      errorMessage("حساب شما ساخته نشد , مجدد تلاش کنید");
+      errorMessage("حساب شما ساخته نشد , مجددا تلاش کنید");
       console.log(ex);
     }
   };

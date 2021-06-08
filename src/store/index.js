@@ -1,11 +1,11 @@
 import { applyMiddleware, compose, createStore } from "redux";
 //reducers
-import { reducers } from "../reducers";
+import { reducers } from "./reducers";
 // middleware
 import thunk from "redux-thunk";
 // init weblog
-import { getAllCourses } from "../actions/courses";
-import { getAllPosts } from "../actions/posts";
+import { getAllCourses } from "./actions/course";
+import { getAllPosts } from "./actions/post";
 
 export const store = createStore(
     reducers,

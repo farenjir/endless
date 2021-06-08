@@ -21,7 +21,7 @@ const DashSidebar = () => {
   return (
     <Sider theme="dark" collapsed>
       <Link to="/">
-        <div class="m-3">
+        <div className="m-3">
           <i className="fas fa-infinity icon-brand"></i>
           </div>
       </Link>

@@ -1,16 +1,35 @@
 import React, { Fragment } from "react";
 import { useSelector } from "react-redux";
-import { isEmpty } from "lodash";
 import { NavLink } from "react-router-dom";
+// utils
+import { isEmpty } from "lodash";
 
 const TopNav = () => {
   const user = useSelector(state => state.user);
   return (
     <nav className="navbar navbar-main px-3 navbar-expand-md">
-      <NavLink to="/" className="icon-brand-div">
-        <i className="fas fa-infinity icon-brand"></i>
-        {/* <!-- <img className="nav-pills" src="./img/gearLogo.png" alt="Logo" /> --> */}
-      </NavLink>
+      <ul className="navbar-nav  log-cart">
+        <li className="nav-item icon-under">
+          {" "}
+          <NavLink to="/" className="icon-brand-div mx-2">
+            <i className="fas fa-infinity icon-brand"></i>
+          </NavLink>
+        </li>
+        <li className="nav-item icon-under logo-cart-item">
+          <NavLink
+            to="/cart"
+            activeStyle={{ color: "gold" }}
+            className="nav-link  mx-2 mx-md-0"
+          >
+            <small>
+              <i className="fas fa-shopping-cart mx-1"></i>
+              <span className="font-weight-bolder">
+                (<strong className="text-danger"> 3 </strong>)
+              </span>
+            </small>
+          </NavLink>
+        </li>
+      </ul>
       <button
         className="navbar-toggler"
         type="button"
@@ -93,7 +112,7 @@ const TopNav = () => {
                 <i className="fas fa-database mx-2"></i>
               </NavLink>
               <NavLink to="/logout" className="nav-link">
-                <i class="fa fa-sign-out-alt mx-3" aria-hidden="true"></i>
+                <i className="fa fa-sign-out-alt mx-3" aria-hidden="true"></i>
               </NavLink>
               <NavLink
                 to="/profile"
@@ -199,7 +218,7 @@ const TopNav = () => {
               </li>
               <li className="nav-item icon-under">
                 <NavLink to="/logout" className="nav-link">
-                  <i class="fa fa-sign-out-alt" aria-hidden="true"></i>
+                  <i className="fa fa-sign-out-alt" aria-hidden="true"></i>
                 </NavLink>
               </li>
             </Fragment>
