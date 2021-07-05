@@ -6,96 +6,96 @@ import { Link } from "react-router-dom";
 const CourseSuggest = () => {
   return (
     <section className="course-suggest">
-      <div className="container mb-3">
+      <div class="container mb-3">
         <div className="row">
           <div className="col-md-9 mx-md-auto py-4">
             <Carousel dotPosition="left" autoplay>
               <div>
-                <div className="card shadow">
-                  <div className="card-body p-0">
-                    <div className="row">
-                      <div className="col-lg-6 d-none d-md-flex">
+                <div class="card shadow">
+                  <div class="card-body p-0">
+                    <div class="row">
+                      <div class="col-lg-6 d-none d-md-flex">
                         <img
-                          className="imgTop"
+                          class="imgTop"
                           src="assets/images/featured-img.jpeg"
                           alt="img-course"
                         />
-                        {/* <!-- <div className="flex-grow-1 bg-login-image" style="background-image: url(img/car-german-3.jpeg);"></div> -->*/}
+                        {/* <!-- <div class="flex-grow-1 bg-login-image" style="background-image: url(img/car-german-3.jpeg);"></div> -->*/}
                       </div>
-                      <div className="col-lg-6 px-5 pt-4 pb-2">
-                        <h4 className="text-right">Welcome Back Siamack</h4>
+                      <div class="col-lg-6 px-5 pt-4 pb-2">
+                        <h4 class="text-right">Welcome Back Siamack</h4>
                         <form>
-                          <div className="row mb-3">
-                            <div className="col-12">
-                              <div className="d-flex justify-content-end align-items-center">
-                                <p className="text-muted mx-2">Lorem ipsum dolor</p>
+                          <div class="row mb-3">
+                            <div class="col-12">
+                              <div class="d-flex justify-content-end align-items-center">
+                                <p class="text-muted mx-2">Lorem ipsum dolor</p>
                                 <img
                                   src="assets/images/customer-img.jpg"
-                                  className="rounded-circle"
+                                  class="rounded-circle"
                                   alt="img-teacher"
                                 />
                               </div>
                             </div>
                           </div>
-                          <div className="row text-right">
-                            <div className="col-12">
-                              <div className="row">
-                                <div className="col-6">
+                          <div class="row text-right">
+                            <div class="col-12">
+                              <div class="row">
+                                <div class="col-6">
                                   <p>Lorem ipsum dolor</p>
                                 </div>
-                                <div className="col-6">
-                                  <p>Lorem ipsum dolor</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="col-12">
-                              <div className="row">
-                                <div className="col-6">
-                                  <p>Lorem ipsum dolor</p>
-                                </div>
-                                <div className="col-6">
+                                <div class="col-6">
                                   <p>Lorem ipsum dolor</p>
                                 </div>
                               </div>
                             </div>
-                            <div className="col-12">
-                              <div className="row">
-                                <div className="col-6">
+                            <div class="col-12">
+                              <div class="row">
+                                <div class="col-6">
                                   <p>Lorem ipsum dolor</p>
                                 </div>
-                                <div className="col-6">
+                                <div class="col-6">
                                   <p>Lorem ipsum dolor</p>
                                 </div>
                               </div>
                             </div>
-                            <div className="col-12">
-                              <div className="row">
-                                <div className="col-6">
+                            <div class="col-12">
+                              <div class="row">
+                                <div class="col-6">
                                   <p>Lorem ipsum dolor</p>
                                 </div>
-                                <div className="col-6">
+                                <div class="col-6">
+                                  <p>Lorem ipsum dolor</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="row">
+                                <div class="col-6">
+                                  <p>Lorem ipsum dolor</p>
+                                </div>
+                                <div class="col-6">
                                   <p>Lorem ipsum dolor</p>
                                 </div>
                               </div>
                             </div>
                           </div>
                           <div>
-                            <div className="w-100 text-right">
-                              <small className="text-muted mx-auto">
+                            <div class="w-100 text-right">
+                              <small class="text-muted mx-auto">
                                 Lorem ipsum dolor tempore
                               </small>
                             </div>
                             <button
-                              className="btn btn-danger btn-block text-white"
+                              class="btn btn-danger btn-block text-white"
                               type="submit"
                             >
-                              <i className="mx-1 fas fa-user-circle"></i>Shoping{" "}
+                              <i class="mx-1 fas fa-user-circle"></i>Shoping{" "}
                             </button>
                             <button
-                              className="btn btn-secondary btn-block text-white"
+                              class="btn btn-secondary btn-block text-white"
                               type="submit"
                             >
-                              <i className="mx-1 fas fa-user-circle"></i>Guide Setup
+                              <i class="mx-1 fas fa-user-circle"></i>Guide Setup
                             </button>
                           </div>
                         </form>
@@ -105,91 +105,91 @@ const CourseSuggest = () => {
                 </div>
               </div>
               <div>
-                <div className="card shadow">
-                  <div className="card-body p-0">
-                    <div className="row">
-                      <div className="col-lg-6 d-none d-md-flex">
+                <div class="card shadow">
+                  <div class="card-body p-0">
+                    <div class="row">
+                      <div class="col-lg-6 d-none d-md-flex">
                         <img
-                          className="imgTop"
+                          class="imgTop"
                           src="assets/images/featured-img.jpeg"
                           alt="img-course"
                         />
-                        {/* <!-- <div className="flex-grow-1 bg-login-image" style="background-image: url(img/car-german-3.jpeg);"></div> -->*/}
+                        {/* <!-- <div class="flex-grow-1 bg-login-image" style="background-image: url(img/car-german-3.jpeg);"></div> -->*/}
                       </div>
-                      <div className="col-lg-6 px-5 pt-4 pb-2">
-                        <h4 className="text-right">Welcome Back Siamack</h4>
+                      <div class="col-lg-6 px-5 pt-4 pb-2">
+                        <h4 class="text-right">Welcome Back Siamack</h4>
                         <form>
-                          <div className="row mb-3">
-                            <div className="col-12">
-                              <div className="d-flex justify-content-end align-items-center">
-                                <p className="text-muted mx-2">Lorem ipsum dolor</p>
+                          <div class="row mb-3">
+                            <div class="col-12">
+                              <div class="d-flex justify-content-end align-items-center">
+                                <p class="text-muted mx-2">Lorem ipsum dolor</p>
                                 <img
                                   src="assets/images/customer-img.jpg"
-                                  className="rounded-circle"
+                                  class="rounded-circle"
                                   alt="img-teacher"
                                 />
                               </div>
                             </div>
                           </div>
-                          <div className="row text-right">
-                            <div className="col-12">
-                              <div className="row">
-                                <div className="col-6">
+                          <div class="row text-right">
+                            <div class="col-12">
+                              <div class="row">
+                                <div class="col-6">
                                   <p>Lorem ipsum dolor</p>
                                 </div>
-                                <div className="col-6">
-                                  <p>Lorem ipsum dolor</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="col-12">
-                              <div className="row">
-                                <div className="col-6">
-                                  <p>Lorem ipsum dolor</p>
-                                </div>
-                                <div className="col-6">
+                                <div class="col-6">
                                   <p>Lorem ipsum dolor</p>
                                 </div>
                               </div>
                             </div>
-                            <div className="col-12">
-                              <div className="row">
-                                <div className="col-6">
+                            <div class="col-12">
+                              <div class="row">
+                                <div class="col-6">
                                   <p>Lorem ipsum dolor</p>
                                 </div>
-                                <div className="col-6">
+                                <div class="col-6">
                                   <p>Lorem ipsum dolor</p>
                                 </div>
                               </div>
                             </div>
-                            <div className="col-12">
-                              <div className="row">
-                                <div className="col-6">
+                            <div class="col-12">
+                              <div class="row">
+                                <div class="col-6">
                                   <p>Lorem ipsum dolor</p>
                                 </div>
-                                <div className="col-6">
+                                <div class="col-6">
+                                  <p>Lorem ipsum dolor</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="row">
+                                <div class="col-6">
+                                  <p>Lorem ipsum dolor</p>
+                                </div>
+                                <div class="col-6">
                                   <p>Lorem ipsum dolor</p>
                                 </div>
                               </div>
                             </div>
                           </div>
                           <div>
-                            <div className="w-100 text-right">
-                              <small className="text-muted mx-auto">
+                            <div class="w-100 text-right">
+                              <small class="text-muted mx-auto">
                                 Lorem ipsum dolor tempore
                               </small>
                             </div>
                             <button
-                              className="btn btn-danger btn-block text-white"
+                              class="btn btn-danger btn-block text-white"
                               type="submit"
                             >
-                              <i className="mx-1 fas fa-user-circle"></i>Shoping{" "}
+                              <i class="mx-1 fas fa-user-circle"></i>Shoping{" "}
                             </button>
                             <button
-                              className="btn btn-secondary btn-block text-white"
+                              class="btn btn-secondary btn-block text-white"
                               type="submit"
                             >
-                              <i className="mx-1 fas fa-user-circle"></i>Guide Setup
+                              <i class="mx-1 fas fa-user-circle"></i>Guide Setup
                             </button>
                           </div>
                         </form>
@@ -199,91 +199,91 @@ const CourseSuggest = () => {
                 </div>
               </div>
               <div>
-                <div className="card shadow">
-                  <div className="card-body p-0">
-                    <div className="row">
-                      <div className="col-lg-6 d-none d-md-flex">
+                <div class="card shadow">
+                  <div class="card-body p-0">
+                    <div class="row">
+                      <div class="col-lg-6 d-none d-md-flex">
                         <img
-                          className="imgTop"
+                          class="imgTop"
                           src="assets/images/featured-img.jpeg"
                           alt="img-course"
                         />
-                        {/* <!-- <div className="flex-grow-1 bg-login-image" style="background-image: url(img/car-german-3.jpeg);"></div> -->*/}
+                        {/* <!-- <div class="flex-grow-1 bg-login-image" style="background-image: url(img/car-german-3.jpeg);"></div> -->*/}
                       </div>
-                      <div className="col-lg-6 px-5 pt-4 pb-2">
-                        <h4 className="text-right">Welcome Back Siamack</h4>
+                      <div class="col-lg-6 px-5 pt-4 pb-2">
+                        <h4 class="text-right">Welcome Back Siamack</h4>
                         <form>
-                          <div className="row mb-3">
-                            <div className="col-12">
-                              <div className="d-flex justify-content-end align-items-center">
-                                <p className="text-muted mx-2">Lorem ipsum dolor</p>
+                          <div class="row mb-3">
+                            <div class="col-12">
+                              <div class="d-flex justify-content-end align-items-center">
+                                <p class="text-muted mx-2">Lorem ipsum dolor</p>
                                 <img
                                   src="assets/images/customer-img.jpg"
-                                  className="rounded-circle"
+                                  class="rounded-circle"
                                   alt="img-teacher"
                                 />
                               </div>
                             </div>
                           </div>
-                          <div className="row text-right">
-                            <div className="col-12">
-                              <div className="row">
-                                <div className="col-6">
+                          <div class="row text-right">
+                            <div class="col-12">
+                              <div class="row">
+                                <div class="col-6">
                                   <p>Lorem ipsum dolor</p>
                                 </div>
-                                <div className="col-6">
-                                  <p>Lorem ipsum dolor</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="col-12">
-                              <div className="row">
-                                <div className="col-6">
-                                  <p>Lorem ipsum dolor</p>
-                                </div>
-                                <div className="col-6">
+                                <div class="col-6">
                                   <p>Lorem ipsum dolor</p>
                                 </div>
                               </div>
                             </div>
-                            <div className="col-12">
-                              <div className="row">
-                                <div className="col-6">
+                            <div class="col-12">
+                              <div class="row">
+                                <div class="col-6">
                                   <p>Lorem ipsum dolor</p>
                                 </div>
-                                <div className="col-6">
+                                <div class="col-6">
                                   <p>Lorem ipsum dolor</p>
                                 </div>
                               </div>
                             </div>
-                            <div className="col-12">
-                              <div className="row">
-                                <div className="col-6">
+                            <div class="col-12">
+                              <div class="row">
+                                <div class="col-6">
                                   <p>Lorem ipsum dolor</p>
                                 </div>
-                                <div className="col-6">
+                                <div class="col-6">
+                                  <p>Lorem ipsum dolor</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="row">
+                                <div class="col-6">
+                                  <p>Lorem ipsum dolor</p>
+                                </div>
+                                <div class="col-6">
                                   <p>Lorem ipsum dolor</p>
                                 </div>
                               </div>
                             </div>
                           </div>
                           <div>
-                            <div className="w-100 text-right">
-                              <small className="text-muted mx-auto">
+                            <div class="w-100 text-right">
+                              <small class="text-muted mx-auto">
                                 Lorem ipsum dolor tempore
                               </small>
                             </div>
                             <button
-                              className="btn btn-danger btn-block text-white"
+                              class="btn btn-danger btn-block text-white"
                               type="submit"
                             >
-                              <i className="mx-1 fas fa-user-circle"></i>Shoping{" "}
+                              <i class="mx-1 fas fa-user-circle"></i>Shoping{" "}
                             </button>
                             <button
-                              className="btn btn-secondary btn-block text-white"
+                              class="btn btn-secondary btn-block text-white"
                               type="submit"
                             >
-                              <i className="mx-1 fas fa-user-circle"></i>Guide Setup
+                              <i class="mx-1 fas fa-user-circle"></i>Guide Setup
                             </button>
                           </div>
                         </form>

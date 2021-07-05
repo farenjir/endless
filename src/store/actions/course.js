@@ -10,14 +10,10 @@ import { successMessage, warningMessage } from "../../utils/messageToast";
 export const getSingleCourse = (courseId) => {
   return async (dispatch) => {
     const { data } = await getCourse(courseId);
-    try {
-      dispatch({
-        type: "GET_COURSE",
-        payload: data.course,
-      });
-    } catch (ex) {
-      console.log("GET_COURSE", ex);
-    }
+    dispatch({
+      type: "GET_COURSE",
+      payload: data.course,
+    });
   };
 };
 
@@ -32,7 +28,7 @@ export const getAllCourses = () => {
         payload: data.courses,
       });
     } catch (ex) {
-      console.log("INIT_COURSES", ex);
+      console.log(ex);
     }
   };
 };
@@ -51,7 +47,6 @@ export const createNewCourse = (course) => {
         type: "ADD_COURSE",
         payload: [...courses],
       });
-      console.log("ADD_COURSE", ex);
     }
   };
 };
@@ -71,7 +66,6 @@ export const handleCourseUpdate = (courseId, updatedCourse) => {
       }
     } catch (ex) {
       await dispatch({ type: "UPDATE_COURSE", payload: [...courses] });
-      console.log("UPDATE_COURSE", ex);
     }
   };
 };
@@ -94,7 +88,6 @@ export const handleCourseDelete = (courseId) => {
         type: "DELETE_COURSE",
         payload: [...courses],
       });
-      console.log("DELETE_COURSE",ex)
     }
   };
 };

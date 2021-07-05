@@ -10,11 +10,7 @@ import { successMessage, warningMessage } from "../../utils/messageToast";
 export const getSinglePost = (postId) => {
   return async (dispatch) => {
     const { data } = await getPost(postId);
-    try {
-      await dispatch({ type: "GET_POST", payload: data.post });
-    } catch (ex) {
-      console.log("GET_POST", ex);
-    }
+    await dispatch({ type: "GET_POST", payload: data.post });
   };
 };
 
@@ -29,7 +25,7 @@ export const getAllPosts = () => {
         payload: data.posts,
       });
     } catch (ex) {
-      console.log("INIT_POSTS", ex);
+      console.log(ex);
     }
   };
 };
@@ -42,14 +38,13 @@ export const createNewPost = (post) => {
       if (status === 201) successMessage("پست با موفقیت ساخته شد");
       await dispatch({
         type: "ADD_POST",
-        payload: [data.post, ...posts],
+        payload: [...posts, data.post],
       });
     } catch (ex) {
       await dispatch({
         type: "ADD_POST",
         payload: [...posts],
       });
-      console.log("ADD_POST", ex);
     }
   };
 };
@@ -69,7 +64,6 @@ export const handlePostUpdate = (postId, updatedPost) => {
       }
     } catch (ex) {
       await dispatch({ type: "UPDATE_POST", payload: [...posts] });
-      console.log("UPDATE_POST", ex);
     }
   };
 };
@@ -92,7 +86,6 @@ export const handlePostDelete = (postId) => {
         type: "DELETE_POST",
         payload: [...posts],
       });
-      console.log("DELETE_POST", ex);
     }
   };
 };

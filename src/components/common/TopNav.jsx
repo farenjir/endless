@@ -1,8 +1,7 @@
 import React, { Fragment } from "react";
+import { isEmpty } from "lodash";
 import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
-// utils
-import { isEmpty } from "lodash";
 
 const TopNav = () => {
   const user = useSelector(state => state.user);
@@ -112,7 +111,7 @@ const TopNav = () => {
                 <i className="fas fa-database mx-2"></i>
               </NavLink>
               <NavLink to="/logout" className="nav-link">
-                <i className="fa fa-sign-out-alt mx-3" aria-hidden="true"></i>
+                <i class="fa fa-sign-out-alt mx-3" aria-hidden="true"></i>
               </NavLink>
               <NavLink
                 to="/profile"
@@ -218,7 +217,7 @@ const TopNav = () => {
               </li>
               <li className="nav-item icon-under">
                 <NavLink to="/logout" className="nav-link">
-                  <i className="fa fa-sign-out-alt" aria-hidden="true"></i>
+                  <i class="fa fa-sign-out-alt" aria-hidden="true"></i>
                 </NavLink>
               </li>
             </Fragment>

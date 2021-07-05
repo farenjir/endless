@@ -3,18 +3,18 @@ import React from "react";
 const BuyVip = () => {
   return (
     <section>
-      <div className="container">
-        <div className="block-heading text-center py-4">
+      <div class="container">
+        <div class="block-heading text-center py-4">
           <h2>خرید اشتراک ویژه</h2>
           <p>
             تاکنون مجموعه اندلس توانسته دوره در زمینه های طراحی و گرافیک تولید
             نماید
           </p>
         </div>
-        <div className="row justify-content-center text-right">
-          <div className="col-12 col-md-5 col-lg-4 p-2 ">
-            <div className="clean-pricing-item clean-pricing-item-normal">
-              <div className="heading">
+        <div class="row justify-content-center text-right">
+          <div class="col-12 col-md-5 col-lg-4 p-2 ">
+            <div class="clean-pricing-item clean-pricing-item-normal">
+              <div class="heading">
                 <h3>معمولی</h3>
               </div>
               <p>
@@ -41,17 +41,17 @@ const BuyVip = () => {
                   <span>200/000 <small>تومان</small></span>
                 </h5>
               </div>
-              <button className="btn btn-outline-primary btn-block" type="button">
+              <button class="btn btn-outline-primary btn-block" type="button">
                 خرید
               </button>
             </div>
           </div>
-          <div className="col-12 col-md-5 col-lg-4 p-2 ">
-            <div className="clean-pricing-item clean-pricing-item-suggest">
-              <div className="ribbon">
+          <div class="col-12 col-md-5 col-lg-4 p-2 ">
+            <div class="clean-pricing-item clean-pricing-item-suggest">
+              <div class="ribbon">
                 <span>پیشنهاد اندلس</span>
               </div>
-              <div className="heading">
+              <div class="heading">
                 <h3>ویژه</h3>
               </div>
               <p>
@@ -78,14 +78,14 @@ const BuyVip = () => {
                   <span>200/000 <small>تومان</small></span>
                 </h5>
               </div>
-              <button className="btn btn-outline-success btn-block" type="button">
+              <button class="btn btn-outline-success btn-block" type="button">
                 خرید
               </button>
             </div>
           </div>
-          <div className="col-12 col-md-5 col-lg-4 p-2 ">
-            <div className="clean-pricing-item clean-pricing-item-pro">
-              <div className="heading">
+          <div class="col-12 col-md-5 col-lg-4 p-2 ">
+            <div class="clean-pricing-item clean-pricing-item-pro">
+              <div class="heading">
                 <h3>نامحدود</h3>
               </div>
               <p>
@@ -112,7 +112,7 @@ const BuyVip = () => {
                   <span>200/000 <small>تومان</small></span>
                 </h5>
               </div>
-              <button className="btn btn-outline-danger btn-block" type="button">
+              <button class="btn btn-outline-danger btn-block" type="button">
                 خرید
               </button>
             </div>

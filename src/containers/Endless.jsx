@@ -45,6 +45,9 @@ import UserManage from "../components/admin/UserManage";
 import BuyVip from "../components/pages/vip/BuyVip";
 import DashCourses from "../components/course/dashboard/DashCourses";
 import DashTask from "../components/pages/task/DashTask";
+// get users for dashAdmin
+import { getAllUsers } from "../store/actions/user";
+import { store } from "../store/index";
 
 const Endless = () => {
   const user = useSelector((state) => state.user);
@@ -67,7 +70,7 @@ const Endless = () => {
     // RUN
     checkToken();
     // initialize users for AdminDashboard
-    // if (!isEmpty(user) && user.isAdmin) store.dispatch(getAllUsers());
+    if (!isEmpty(user) && user.isAdmin) store.dispatch(getAllUsers());
   }, []);
 
   return (

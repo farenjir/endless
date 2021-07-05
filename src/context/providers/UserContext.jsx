@@ -67,7 +67,7 @@ const UserContext = props => {
         forceUpdate(1);
       }
     } catch (ex) {
-      errorMessage("حساب شما ساخته نشد , مجددا تلاش کنید");
+      errorMessage("حساب شما ساخته نشد , مجدد تلاش کنید");
       console.log(ex);
     }
   };
